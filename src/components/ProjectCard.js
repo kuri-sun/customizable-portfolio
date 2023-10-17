@@ -24,14 +24,14 @@ export default function ProjectCard(props) {
       <div className="mt-2">
         <div className="flex flex-row gap-2 items-center">
           <h1 className="font-bold md:text-xl">{projectName}</h1>
-          <a href={githubLink} target="_blank">
+          <a href={githubLink} rel="noreferrer" target="_blank">
             <FontAwesomeIcon
               size="xl hover:scale-110 transition duration-100 cursor-pointer"
               icon={faGithub}
             />
           </a>
           {appLink && (
-            <a>
+            <a ref={appLink} rel="noreferrer" target="_blank">
               <FontAwesomeIcon
                 size="xl hover:scale-110 transition duration-100 cursor-pointer"
                 icon={faLink}

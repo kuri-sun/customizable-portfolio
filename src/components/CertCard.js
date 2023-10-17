@@ -8,7 +8,7 @@ export default function CertCard(props) {
   const toDate = props.fromDate;
 
   return (
-    <a href={link} target="_blank">
+    <a href={link} rel="noreferrer" target="_blank">
       <div
         data-aos="fade-up"
         data-aos-duration="500"
