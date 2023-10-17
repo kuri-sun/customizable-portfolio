@@ -10,7 +10,9 @@ export default function Projects() {
         <ProjectCard
           githubLink={"https://github.com/kuri-sun/ai_image_analyzer"}
           appLink={"https://main--bright-quokka-aa4351.netlify.app/"}
-          img={""}
+          img={
+            "https://github.com/kuri-sun/portfolio/assets/62743644/187d6139-6819-4ba0-b022-4c75040320c2"
+          }
           projectName={"AI Image Analyzer"}
           desc={
             "Uploading a human face image to the serverless backend that consists of API Gateway and Lambda sends the image to the trained data model which can scan the image, analyze it and generate JSON. The React application hosted by S3 shows the analyzed result."
