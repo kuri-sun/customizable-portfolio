@@ -5,7 +5,7 @@ export default function CertCard(props) {
   const issuedBy = props.issuedBy;
   const desc = props.desc;
   const fromDate = props.fromDate;
-  const toDate = props.fromDate;
+  const toDate = props.toDate;
 
   return (
     <a href={link} rel="noreferrer" target="_blank">
