@@ -29,7 +29,7 @@ export default function ProjectCard(props) {
               size="xl hover:scale-110 transition duration-100 cursor-pointer"
               icon={faGithub}
               onClick={() => {
-                window.location.replace(githubLink);
+                window.open(githubLink, "_blank");
               }}
             />
           )}
@@ -38,7 +38,7 @@ export default function ProjectCard(props) {
               size="xl hover:scale-110 transition duration-100 cursor-pointer"
               icon={faLink}
               onClick={() => {
-                window.location.replace(appLink);
+                window.open(appLink, "_blank");
               }}
             />
           )}
