@@ -24,19 +24,23 @@ export default function ProjectCard(props) {
       <div className="mt-2">
         <div className="flex flex-row gap-2 items-center">
           <h1 className="font-bold md:text-xl">{projectName}</h1>
-          <a href={githubLink} rel="noreferrer" target="_blank">
+          {githubLink && (
             <FontAwesomeIcon
               size="xl hover:scale-110 transition duration-100 cursor-pointer"
               icon={faGithub}
+              onClick={() => {
+                window.location.replace(githubLink);
+              }}
             />
-          </a>
+          )}
           {appLink && (
-            <a ref={appLink} rel="noreferrer" target="_blank">
-              <FontAwesomeIcon
-                size="xl hover:scale-110 transition duration-100 cursor-pointer"
-                icon={faLink}
-              />
-            </a>
+            <FontAwesomeIcon
+              size="xl hover:scale-110 transition duration-100 cursor-pointer"
+              icon={faLink}
+              onClick={() => {
+                window.location.replace(appLink);
+              }}
+            />
           )}
         </div>
         <p className="font-light text-gray-300">{desc}</p>
