@@ -13,6 +13,11 @@ export default function Footer() {
           </a>
         </li>
         <li>
+          <a href="#projects" className="hover:underline">
+            Projects
+          </a>
+        </li>
+        <li>
           <a href="#certs" className="hover:underline">
             Certfications
           </a>

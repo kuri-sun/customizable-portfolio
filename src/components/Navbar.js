@@ -16,6 +16,11 @@ export default function Navbar() {
             </a>
           </li>
           <li className="p-4">
+            <a href="#projects" className="hover:underline">
+              Projects
+            </a>
+          </li>
+          <li className="p-4">
             <a href="#certs" className="hover:underline">
               Certfications
             </a>

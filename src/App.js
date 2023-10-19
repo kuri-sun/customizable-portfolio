@@ -19,8 +19,8 @@ function App() {
       <Navbar />
       <Hiro />
       <Skills />
-      <Certs />
       <Projects />
+      <Certs />
       <Footer />
     </div>
   );
