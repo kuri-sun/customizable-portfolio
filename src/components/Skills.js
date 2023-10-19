@@ -61,7 +61,7 @@ export default function Skills() {
 
           <SkillCard name="AWS" experience="2+ years" img={aws} />
           <SkillCard name="Azure" experience="Familiar" img={azure} />
-          <SkillCard name="Google Cloud " experience="Familiar" img={redux} />
+          <SkillCard name="Google Cloud " experience="Familiar" img={gc} />
 
           <SkillCard name="Windows" experience="2+ years" img={windows} />
           <SkillCard name="Linux" experience="2+ years" img={linux} />
