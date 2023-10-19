@@ -62,7 +62,7 @@ export default function Hiro() {
             </li>
             <li>
               <a
-                href="https://instagram.com/ha.ruki5838/"
+                href="https://instagram.com/ruki.k.1204/"
                 rel="noreferrer"
                 target="_blank"
               >
