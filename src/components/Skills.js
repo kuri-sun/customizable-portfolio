@@ -37,9 +37,7 @@ export default function Skills() {
   return (
     <div id="skills" className="mt-4 text-white">
       <h1 className="text-2xl font-bold">Skills</h1>
-      <p className="font-light text-gray-400">
-        Here are some of my Certifications
-      </p>
+      <p className="font-light text-gray-400">Here are some of my Skills</p>
       <div className="mt-4">
         <Slider {...settings}>
           <SkillCard name="Javascript" experience="2+ years" img={javascript} />
@@ -57,7 +55,7 @@ export default function Skills() {
           <SkillCard name="Spring" experience="2+ years" img={spring} />
 
           <SkillCard name="Docker" experience="2+ years" img={docker} />
-          <SkillCard name="Kubernetes" experience="2+ years" img={kubernetes} />
+          <SkillCard name="Kubernetes" experience="Familiar" img={kubernetes} />
 
           <SkillCard name="AWS" experience="2+ years" img={aws} />
           <SkillCard name="Azure" experience="Familiar" img={azure} />
