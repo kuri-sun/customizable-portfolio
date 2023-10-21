@@ -2,7 +2,7 @@ import resume from "../assets/resume.pdf";
 
 export default function Navbar() {
   return (
-    <div className="navbar-container fixed z-50 bg-gray-200 w-full top-0 left-0 px-8 py-4 lg:px-20 xl:px-36 bg-gray-300">
+    <div className="navbar-container fixed z-50 bg-gray-200 w-full top-0 left-0 px-8 py-4 lg:px-20 xl:px-36 bg-gray-200">
       <div className="flex justify-between items-center text-white">
         <ul className="hidden md:flex">
           <li className="p-4">
