@@ -37,21 +37,21 @@ This project was built using these technologies.
 
 **🎨 Styled with Tailwind with easy to maintenance**
 
-## 🛠 Installation and Setup Instructions
+## 🛠 Setup
 
 0. You need `node.js` and `git` installed globally on your machine.
 1. Clone this repository.
 2. Installation: `npm install`
 3. In the project directory, you can run: `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) and Boom!!
 
-## Usage Instructions
+## Usage
 
 Open the project folder and Navigate to `/src/components/`. <br/>
-There, you can play around the components in your way.
+Let's customize components whatever you like!
 
 ## Support
 
-Give a ⭐ if you like this website!loud Architecture
+Give it a ⭐Star⭐ if you liked this! 
+**Thank you so much for reading until here! Have a great morning/afternoon/night!**
