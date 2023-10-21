@@ -2,13 +2,14 @@
 
 Used Next.js to populate the portfolio, and styling up with Tailwind CSS.
 Linked this GitHub repository with Netlify to configure deploy automation.
+
+app url: https://haruki-kuriwada.netlify.app/
+
 <br/>
 ![laptop](https://github.com/kuri-sun/portfolio/assets/62743644/54bac1c5-e58c-4a99-98e3-5b7a5482c759)
 <br/>
 
 ## Leveraged Tech Stack
-
-app url: https://haruki-kuriwada.netlify.app/
 
 This project was built using these technologies.
 
