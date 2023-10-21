@@ -7,10 +7,8 @@ import CertCard from "./CertCard.js";
 export default function Certs() {
   return (
     <div id="certs" className="mt-4 text-white">
-      <h1 className="text-2xl underline font-bold text-indigo-500">
-        Certifications
-      </h1>
-      <p className="font-light text-gray-500">
+      <h1 className="text-3xl font-bold text-indigo-500">Certifications</h1>
+      <p className="text-xl font-light text-gray-500">
         Here are some of my Certifications
       </p>
 

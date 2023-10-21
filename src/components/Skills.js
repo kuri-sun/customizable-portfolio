@@ -36,8 +36,8 @@ export default function Skills() {
 
   return (
     <div id="skills" className="mt-4 text-indigo-500">
-      <h1 className="text-2xl font-bold underline">Skills</h1>
-      <p className="font-light text-gray-500">Here are some of my Skills</p>
+      <h1 className="text-3xl font-bold">Skills</h1>
+      <p className="text-xl font-light text-gray-500">Here are some of my Skills</p>
       <div className="mt-4">
         <Slider {...settings}>
           <SkillCard name="Javascript" experience="2+ years" img={javascript} />
