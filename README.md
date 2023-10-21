@@ -6,8 +6,8 @@
   <img src="https://github.com/kuri-sun/portfolio/assets/62743644/99f88f0f-21d0-461e-b3bc-fd0695879d76" alt="elasticsearch" width="40" height="40"/>
   <img src="https://github.com/kuri-sun/portfolio/assets/62743644/34216922-fae1-48be-a72b-dae01e0e75e8" alt="elasticsearch" width="40" height="40"/>
 </p>
-Used **Next.js** to populate the portfolio, and styling up with **Tailwind**.
-Linked this GitHub repository with **Netlify** to configure deploy automation.
+Used Next.js to populate the portfolio, and styling up with Tailwind.
+Linked this GitHub repository with Netlify to configure deploy automation.
 
 app url: https://haruki-kuriwada.netlify.app
 <br/>
