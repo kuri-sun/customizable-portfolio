@@ -16,7 +16,7 @@ function App() {
   }, []);
   return (
     <div className="flex flex-col gap-32">
-      <div className="flex flex-col gap-24 px-6 lg:px-20 xl:px-36">
+      <div className="flex flex-col gap-24 px-6 md:px-12 lg:px-20 xl:px-36">
         <Navbar />
         <Hiro />
         <Skills />

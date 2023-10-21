@@ -5,6 +5,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import avatar from "../assets/hero/avatar.png";
+import instagram from "../assets/hero/instagram.svg";
 
 export default function Hiro() {
   return (
@@ -28,8 +29,8 @@ export default function Hiro() {
                   Haruki Kuriwada
                 </h1>
               </div>
-              <div className="bg-indigo-500 mt-2 px-2 py-1 w-fit">
-                <p className="text-3xl font-bold">
+              <div className="bg-white md:bg-indigo-500 mt-2 md:px-2 py-1 w-fit">
+                <p className="text-3xl text-indigo-500 md:text-white font-bold">
                   Software Engineer / Cloud Engineer
                 </p>
               </div>
@@ -46,46 +47,44 @@ export default function Hiro() {
             </div>
           </div>
           {/* Avator section */}
-          <img src={avatar} className="h-48" />
+          <img
+            src={avatar}
+            className="h-48 hover:scale-110 cursor-pointer transition duration-100"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(
+                "https://docs.google.com/document/d/1qYN-J9AX7Xt_cM48pBJzIC8_WWa1Sy--2kYZOiltVwY/edit?usp=sharing",
+                "_blank"
+              );
+            }}
+          />
         </div>
         {/* Social media */}
         <ul className="flex mt-2 gap-4 items-center">
-          <li>
-            <a
-              href="https://github.com/kuri-sun"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon
-                size="2xl text-black hover:scale-110 transition duration-100"
-                icon={faGithub}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/harukikuriwada/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon
-                size="2xl text-black hover:scale-110 transition duration-100"
-                icon={faLinkedinIn}
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://instagram.com/ha.ruki.k/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon
-                size="2xl text-black hover:scale-110 transition duration-100"
-                icon={faInstagram}
-              />
-            </a>
-          </li>
+          <FontAwesomeIcon
+            size="2xl text-black hover:scale-110 cursor-pointer transition duration-100"
+            icon={faGithub}
+            onClick={() => {
+              window.open("https://github.com/kuri-sun", "_blank");
+            }}
+          />
+          <FontAwesomeIcon
+            size="2xl text-black hover:scale-110 cursor-pointer transition duration-100"
+            icon={faLinkedinIn}
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/harukikuriwada/",
+                "_blank"
+              );
+            }}
+          />
+          <FontAwesomeIcon
+            size="2xl text-black hover:scale-110 cursor-pointer transition duration-100"
+            icon={faInstagram}
+            onClick={() => {
+              window.open("https://instagram.com/ha.ruki.k/", "_blank");
+            }}
+          />
         </ul>
       </div>
     </>
