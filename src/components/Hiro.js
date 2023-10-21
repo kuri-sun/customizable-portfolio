@@ -52,10 +52,7 @@ export default function Hiro() {
             alt="my portfolio avatar"
             onClick={(e) => {
               e.preventDefault();
-              window.open(
-                "https://docs.google.com/document/d/1qYN-J9AX7Xt_cM48pBJzIC8_WWa1Sy--2kYZOiltVwY/edit?usp=sharing",
-                "_blank"
-              );
+              window.open("https://linktr.ee/ha.ruki.k", "_blank");
             }}
           />
         </div>
