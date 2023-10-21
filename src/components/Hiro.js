@@ -5,7 +5,6 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import avatar from "../assets/hero/avatar.png";
-import instagram from "../assets/hero/instagram.svg";
 
 export default function Hiro() {
   return (
