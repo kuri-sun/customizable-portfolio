@@ -8,6 +8,8 @@ app url: https://haruki-kuriwada.netlify.app
 
 ![laptop](https://github.com/kuri-sun/portfolio/assets/62743644/54bac1c5-e58c-4a99-98e3-5b7a5482c759)
 <br/>
+![mockuper](https://github.com/kuri-sun/portfolio/assets/62743644/c1c79c76-33a4-4283-b41e-77b499744cb5)
+<br/>
 
 ## Leveraged Tech Stack
 
