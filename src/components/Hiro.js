@@ -20,15 +20,19 @@ export default function Hiro() {
         >
           <div className="flex flex-col w-full mt-8">
             <div className="flex flex-row items-center gap-2">
-              <h1 className="text-2xl text-gray-400">Hi, I'm</h1>
-              <h1 className="text-2xl font-bold text-gray-100">
-                Haruki Kuriwada
-              </h1>
+              <h1 className="text-3xl text-black">Hi, I'm</h1>
+              <h1 className="text-3xl font-bold text-black">Haruki Kuriwada</h1>
             </div>
-            <p class="text-3xl font-bold">Software Engineer / Cloud Engineer</p>
-            <p className="text-xl font-light text-gray-400 ">
-              4 times AWS certified Software Engineer who has 2+ years of
-              professional experience. Combined with the comprehensive cloud
+            <p className="text-3xl font-bold mt-2">
+              <mark className="text-white py-1 px-2 bg-indigo-500">
+                Software Engineer / Cloud Engineer
+              </mark>
+            </p>
+            <br />
+            <p className="text-xl font-light text-gray-600">
+              <strong className="font-bold">x4</strong> AWS certified Software
+              Engineer who has <strong className="font-bold">2+ years</strong>{" "}
+              of professional experience. Combined with the comprehensive cloud
               knowledge, I can dig deeper into problems and solve them
               efficiently.
               <br /> I am looking for more experience in IT industry.

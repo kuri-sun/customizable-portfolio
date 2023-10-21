@@ -15,12 +15,14 @@ function App() {
     AOS.init();
   }, []);
   return (
-    <div className="flex flex-col gap-24 px-6 lg:px-20 xl:px-36 bg-gray-500">
-      <Navbar />
-      <Hiro />
-      <Skills />
-      <Projects />
-      <Certs />
+    <div className="flex flex-col gap-32">
+      <div className="flex flex-col gap-24 px-6 lg:px-20 xl:px-36">
+        <Navbar />
+        <Hiro />
+        <Skills />
+        <Projects />
+        <Certs />
+      </div>
       <Footer />
     </div>
   );
