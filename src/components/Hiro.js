@@ -54,10 +54,18 @@ export default function Hiro() {
               e.preventDefault();
               window.open("https://linktr.ee/ha.ruki.k", "_blank");
             }}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="100"
           />
         </div>
         {/* Social media */}
-        <ul className="flex mt-2 gap-4 items-center">
+        <ul
+          className="flex mt-2 gap-4 items-center"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+        >
           <FontAwesomeIcon
             size="2xl text-black hover:scale-110 cursor-pointer transition duration-100"
             icon={faGithub}
