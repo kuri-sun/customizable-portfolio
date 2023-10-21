@@ -53,5 +53,5 @@ Let's customize components whatever you like!
 
 ## Support
 
-Give it a ⭐Star⭐ if you liked this! 
+Give it a ⭐Star⭐ if you liked this! <br/>
 **Thank you so much for reading until here! Have a great morning/afternoon/night!**
