@@ -50,6 +50,7 @@ export default function Hiro() {
           <img
             src={avatar}
             className="h-48 hover:scale-110 cursor-pointer transition duration-100"
+            alt="my portfolio avatar"
             onClick={(e) => {
               e.preventDefault();
               window.open(
