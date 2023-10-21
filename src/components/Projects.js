@@ -9,7 +9,6 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center mt-4 gap-5">
         <ProjectCard
           githubLink={"https://github.com/kuri-sun/ai_image_analyzer"}
-          appLink={"https://main--bright-quokka-aa4351.netlify.app/"}
           img={
             "https://github.com/kuri-sun/portfolio/assets/62743644/187d6139-6819-4ba0-b022-4c75040320c2"
           }

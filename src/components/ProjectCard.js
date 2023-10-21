@@ -3,7 +3,6 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ProjectCard(props) {
-  const appLink = props.appLink;
   const githubLink = props.githubLink;
   const img = props.img;
   const projectName = props.projectName;
@@ -30,15 +29,6 @@ export default function ProjectCard(props) {
               icon={faGithub}
               onClick={() => {
                 window.open(githubLink, "_blank");
-              }}
-            />
-          )}
-          {appLink && (
-            <FontAwesomeIcon
-              size="xl hover:scale-110 transition duration-100 cursor-pointer"
-              icon={faLink}
-              onClick={() => {
-                window.open(appLink, "_blank");
               }}
             />
           )}
