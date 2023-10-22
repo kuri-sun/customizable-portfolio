@@ -67,9 +67,6 @@ export default function Hiro(props) {
         </div>
         {/* Social media */}
         <ul
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-offset="100"
           className={`flex mt-2 gap-4 items-center ${
             isDarkMode ? "text-white" : "text-black"
           }`}
