@@ -13,7 +13,7 @@ export default function Hiro(props) {
     <>
       <div
         id="home"
-        className={`flex w-full h-screen items-center md:items-start justify-center flex-col gap-5 text-white`}
+        className={`flex md:h-screen w-full items-center md:items-start justify-center flex-col gap-5 text-white`}
       >
         <div className="flex flex-col md:flex-row gap-5 items-center justify-center text-white">
           {/* Hero section */}
