@@ -2,10 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#home {
-  height: calc(100vh - 32px);
-}
-
 .slick-prev:before {
   color: rgb(99, 102, 241) !important;
 }
