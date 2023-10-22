@@ -4,11 +4,17 @@ import awsSolArch from "../assets/certs/sol_arch.jpeg";
 import awsSysops from "../assets/certs/sysops_admin.jpeg";
 import CertCard from "./CertCard.js";
 
-export default function Certs() {
+export default function Certs(props) {
+  const isDarkMode = props.isDarkMode;
+
   return (
     <div id="certs" className="mt-4 text-white">
       <h1 className="text-3xl font-bold text-indigo-500">Certifications</h1>
-      <p className="text-xl font-light text-gray-500">
+      <p
+        className={`text-xl font-light ${
+          isDarkMode ? "text-white" : "text-gray-500"
+        }`}
+      >
         Here are some of my Certifications
       </p>
 

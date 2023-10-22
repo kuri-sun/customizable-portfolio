@@ -1,10 +1,16 @@
 import ProjectCard from "./ProjectCard";
 
-export default function Projects() {
+export default function Projects(props) {
+  const isDarkMode = props.isDarkMode;
+
   return (
     <div id="projects" className="mt-4 text-white text-indigo-500">
       <h1 className="text-3xl font-bold">Projects</h1>
-      <p className="text-xl font-light text-gray-500">
+      <p
+        className={`text-xl font-light ${
+          isDarkMode ? "text-white" : "text-gray-500"
+        }`}
+      >
         Here are some of my Projects
       </p>
 

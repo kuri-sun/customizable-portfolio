@@ -25,7 +25,8 @@ import spring from "../assets/skills/spring.svg";
 import azure from "../assets/skills/azure.svg";
 import tailwind from "../assets/skills/tailwind.svg";
 
-export default function Skills() {
+export default function Skills(props) {
+  const isDarkMode = props.isDarkMode;
   const settings = {
     dots: false,
     autoplay: true,
@@ -37,7 +38,11 @@ export default function Skills() {
   return (
     <div id="skills" className="mt-4 text-indigo-500">
       <h1 className="text-3xl font-bold">Skills</h1>
-      <p className="text-xl font-light text-gray-500">
+      <p
+        className={`text-xl font-light ${
+          isDarkMode ? "text-white" : "text-gray-500"
+        }`}
+      >
         Here are some of my Skills
       </p>
       <div className="mt-4 px-4">

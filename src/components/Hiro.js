@@ -6,12 +6,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import avatar from "../assets/hero/avatar.png";
 
-export default function Hiro() {
+export default function Hiro(props) {
+  const isDarkMode = props.isDarkMode;
+
   return (
     <>
       <div
         id="home"
-        className="flex w-full h-screen items-center md:items-start justify-center flex-col gap-5 text-white"
+        className={`flex w-full h-screen items-center md:items-start justify-center flex-col gap-5 text-white`}
       >
         <div className="flex flex-col md:flex-row gap-5 items-center justify-center text-white">
           {/* Hero section */}
@@ -22,11 +24,13 @@ export default function Hiro() {
             data-aos-offset="100"
           >
             <div className="flex flex-col w-full mt-8">
-              <div className="flex flex-row items-center gap-2">
-                <h1 className="text-3xl text-black">Hi, I'm</h1>
-                <h1 className="text-3xl font-bold text-black">
-                  Haruki Kuriwada
-                </h1>
+              <div
+                className={`flex flex-row items-center gap-2 ${
+                  isDarkMode ? "text-white" : "text-black"
+                }`}
+              >
+                <h1 className={`text-3xl`}>Hi, I'm</h1>
+                <h1 className="text-3xl font-bold">Haruki Kuriwada</h1>
               </div>
               <div className="bg-white md:bg-indigo-500 mt-2 md:px-2 py-1 w-fit">
                 <p className="text-3xl text-indigo-500 md:text-white font-bold">
@@ -34,7 +38,11 @@ export default function Hiro() {
                 </p>
               </div>
               <br />
-              <p className="text-xl font-light text-gray-600">
+              <p
+                className={`text-xl font-light text-gray-600 ${
+                  isDarkMode ? "text-white" : "text-black"
+                }`}
+              >
                 <strong className="font-bold">x4</strong> AWS certified Software
                 Engineer who has <strong className="font-bold">2+ years</strong>{" "}
                 of professional experience. Combined with the comprehensive
@@ -48,12 +56,8 @@ export default function Hiro() {
           {/* Avator section */}
           <img
             src={avatar}
-            className="h-48 hover:scale-110 cursor-pointer transition duration-100"
+            className="h-48"
             alt="my portfolio avatar"
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("https://linktr.ee/ha.ruki.k", "_blank");
-            }}
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-offset="100"
@@ -61,20 +65,19 @@ export default function Hiro() {
         </div>
         {/* Social media */}
         <ul
-          className="flex mt-2 gap-4 items-center"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-offset="100"
+          className={`flex mt-2 gap-4 items-center ${
+            isDarkMode ? "text-white" : "text-black"
+          }`}
         >
           <FontAwesomeIcon
-            size="2xl text-black hover:scale-110 cursor-pointer transition duration-100"
+            size="2xl hover:scale-110 cursor-pointer transition duration-100"
             icon={faGithub}
             onClick={() => {
               window.open("https://github.com/kuri-sun", "_blank");
             }}
           />
           <FontAwesomeIcon
-            size="2xl text-black hover:scale-110 cursor-pointer transition duration-100"
+            size="2xl hover:scale-110 cursor-pointer transition duration-100"
             icon={faLinkedinIn}
             onClick={() => {
               window.open(
@@ -84,7 +87,7 @@ export default function Hiro() {
             }}
           />
           <FontAwesomeIcon
-            size="2xl text-black hover:scale-110 cursor-pointer transition duration-100"
+            size="2xl hover:scale-110 cursor-pointer transition duration-100"
             icon={faInstagram}
             onClick={() => {
               window.open("https://instagram.com/ha.ruki.k/", "_blank");

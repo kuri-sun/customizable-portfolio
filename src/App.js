@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hiro from "./components/Hiro";
 import Skills from "./components/Skills";
@@ -10,20 +10,23 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   useEffect(() => {
     document.title = "Haruki Kuriwada";
     AOS.init();
   }, []);
+
   return (
-    <div className="flex flex-col gap-32">
-      <div className="flex flex-col gap-24 px-6 md:px-12 lg:px-20 xl:px-36">
-        <Navbar />
-        <Hiro />
-        <Skills />
-        <Projects />
-        <Certs />
+    <div className={`flex flex-col ${isDarkMode ? "bg-dark-200" : "bg-white"}`}>
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <div className={`flex flex-col gap-24 px-6 md:px-12 lg:px-20 xl:px-36`}>
+        <Hiro isDarkMode={isDarkMode} />
+        <Skills isDarkMode={isDarkMode} />
+        <Projects isDarkMode={isDarkMode} />
+        <Certs isDarkMode={isDarkMode} />
       </div>
-      <Footer />
+      <Footer isDarkMode={isDarkMode} />
     </div>
   );
 }
