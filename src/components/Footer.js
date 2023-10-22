@@ -10,7 +10,9 @@ export default function Footer(props) {
         isDarkMode ? "bg-dark-700 text-white" : "bg-gray-200 text-gray-700"
       }`}
     >
-      <ul className={`flex items-center gap-8 text-center`}>
+      <ul
+        className={`flex flex-col md:flex-row items-center gap-8 text-center`}
+      >
         <li>
           <a href="#home" className="hover:underline font-medium">
             About
