@@ -29,7 +29,7 @@ export default function Hiro(props) {
                   isDarkMode ? "text-white" : "text-black"
                 }`}
               >
-                <h1 className="text-4xl">
+                <h1 className="text-3xl">
                   Hi, I'm <span className="font-bold">Haruki Kuriwada</span>
                 </h1>
               </div>
