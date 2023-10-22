@@ -45,9 +45,11 @@ export default function Hiro(props) {
                 }`}
               >
                 <strong className="font-bold">x4</strong> AWS certified Software
-                Engineer who has <strong className="font-bold">2+ years</strong>{" "}
-                of professional experience. Combined with the comprehensive
-                cloud knowledge, I can dig deeper into problems and solve them
+                Engineer who has{" "}
+                <strong className="font-bold">2+ years </strong>
+                of professional experience. <br />
+                Combined with web&mobile development and the comprehensive cloud
+                knowledge, I can dig deeper into problems and solve them
                 efficiently.
                 <br /> I am looking for more experience in IT industry.
               </p>
