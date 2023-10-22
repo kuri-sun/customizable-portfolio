@@ -51,7 +51,6 @@ export default function Hiro(props) {
                 Combined with web&mobile development and the comprehensive cloud
                 knowledge, I can dig deeper into problems and solve them
                 efficiently.
-                <br /> I am looking for more experience in IT industry.
               </p>
               <br />
             </div>
