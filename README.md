@@ -19,8 +19,6 @@ app url: https://haruki-kuriwada.netlify.app
 
 ## Leveraged Tech Stack
 
-This project was built using these technologies.
-
 - Nest.js
 - React
 - HTML
@@ -33,23 +31,20 @@ This project was built using these technologies.
 
 **📖 Multi-Page Layout**
 
+**☀️🌙 Dark&Light mode**
+
 **📱 Fully Responsive**
 
 **🎨 Styled with Tailwind with easy to maintenance**
 
-## 🛠 Setup
+## 🛠 Setup instruction
 
 0. You need `node.js` and `git` installed globally on your machine.
 1. Clone this repository.
 2. Installation: `npm install`
 3. In the project directory, you can run: `npm start`
 
-Open [http://localhost:3000](http://localhost:3000) and Boom!!
-
-## Usage
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-Let's customize components whatever you like!
+Open http://localhost:3000 in your browser and Boom!!
 
 ## Support
 
