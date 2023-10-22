@@ -4,15 +4,13 @@ export default function SkillCard(props) {
       data-aos="fade-up"
       data-aos-duration="500"
       data-aos-offset="100"
-      className="w-11/12  p-4 text-center justify-center bg-indigo-100 rounded-md flex flex-col h-48"
+      className="w-11/12 overflow-hidden p-4 text-center justify-center bg-indigo-100 rounded-md flex flex-col h-48"
     >
-      <img
-        src={props.img}
-        className="w-20 max-h-20 mx-auto"
-        alt={props.name}
-      ></img>
+      <img src={props.img} className="w-20 max-h-20 mx-auto" alt={props.name} />
       <div className="mt-2">
-        <h1 className="font-bold md:text-xl text-dark-500">{props.name}</h1>
+        <div className="font-bold md:text-xl text-dark-500">
+          <span>{props.name}</span>
+        </div>
         <p className="font-light md:text-lg text-dark-500">
           {props.experience}
         </p>

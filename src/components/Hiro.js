@@ -29,12 +29,16 @@ export default function Hiro(props) {
                   isDarkMode ? "text-white" : "text-black"
                 }`}
               >
-                <h1 className={`text-3xl`}>
+                <h1 className="text-4xl">
                   Hi, I'm <span className="font-bold">Haruki Kuriwada</span>
                 </h1>
               </div>
-              <div className="bg-white md:bg-indigo-500 mt-2 md:px-2 py-1 w-fit">
-                <p className="text-3xl text-indigo-500 md:text-white font-bold">
+              <div
+                className={` ${
+                  isDarkMode ? "bg-dark-200" : "bg-white"
+                } md:bg-indigo-500 mt-2 md:px-2 py-1 w-fit`}
+              >
+                <p className="text-4xl text-indigo-500 md:text-white font-bold">
                   Software Engineer / Cloud Engineer
                 </p>
               </div>
@@ -96,6 +100,7 @@ export default function Hiro(props) {
             }}
           />
         </ul>
+        <div className="h-20" />
       </div>
     </>
   );
