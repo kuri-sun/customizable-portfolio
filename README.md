@@ -29,8 +29,6 @@ app url: https://haruki-kuriwada.netlify.app
 
 ## Features
 
-**📖 Multi-Page Layout**
-
 **☀️🌙 Dark&Light mode**
 
 **📱 Fully Responsive**
