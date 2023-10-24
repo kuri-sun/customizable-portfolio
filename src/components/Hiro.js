@@ -48,12 +48,11 @@ export default function Hiro(props) {
                   isDarkMode ? "text-white" : "text-black"
                 }`}
               >
-                <strong className="font-bold">x4</strong> AWS certified Software
-                Engineer who has professional experience in mobile, frontend and
-                backend development <br />
-                Combined with web&mobile development experience and the
-                comprehensive cloud knowledge, I can dig deeper into problems
-                and solve them efficiently.
+                Having professional experience in frontend, backend and mobile
+                application development with 4 AWS Cloud Certifications.
+                <br />
+                Combining all this knowledge, I can tackle problems from various
+                perspectives.
               </p>
               <br />
             </div>
