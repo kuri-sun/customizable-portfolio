@@ -48,12 +48,8 @@ export default function Hiro(props) {
                   isDarkMode ? "text-white" : "text-black"
                 }`}
               >
-                Having professional experience in{" "}
-                <strong className="font-bold">frontend</strong>,{" "}
-                <strong className="font-bold">backend</strong> and{" "}
-                <strong className="font-bold">mobile</strong> application
-                development with <strong className="font-bold">4</strong> AWS
-                Cloud Certifications.
+                Having professional experience in frontend, backend and mobile
+                application development with 4 AWS Cloud Certifications.
                 <br />
                 Combining all this knowledge, I can tackle problems from various
                 perspectives.
