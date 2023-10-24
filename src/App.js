@@ -20,7 +20,7 @@ function App() {
     setIsDarkMode(!isDayTime);
     if (!isDayTime)
       alert(
-        "Automatically changed to night mode, since you are using this in the night."
+        "Set to night mode, since you are using this in the night."
       );
     // Change web browser title.
     document.title = "Haruki Kuriwada";
