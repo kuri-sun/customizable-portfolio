@@ -33,6 +33,11 @@ export default function Footer(props) {
             Certfications
           </a>
         </li>
+        <li>
+          <a href="#exp" className="hover:underline font-medium">
+            Experience
+          </a>
+        </li>
       </ul>
       <div className="flex flex-row gap-8">
         <FontAwesomeIcon

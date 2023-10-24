@@ -69,6 +69,11 @@ export default function Navbar(props) {
               Certfications
             </a>
           </li>
+          <li className="p-4">
+            <a href="#exp" className="hover:underline font-medium">
+              Experience
+            </a>
+          </li>
         </ul>
         {/* resume & dark/light theme */}
         <div className="flex flex-row gap-8">

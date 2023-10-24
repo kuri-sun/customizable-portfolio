@@ -3,7 +3,7 @@ import Experience from "./Experience";
 
 export default function Experiences({ isDarkMode }) {
   return (
-    <div id="certs" className="mt-4 text-white">
+    <div id="exp" className="mt-4 text-white">
       <h1 className="text-3xl font-bold text-indigo-500">Experience</h1>
       <p
         className={`text-xl font-light ${
