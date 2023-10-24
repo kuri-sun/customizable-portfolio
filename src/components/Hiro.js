@@ -51,10 +51,10 @@ export default function Hiro(props) {
                 <strong className="font-bold">x4</strong> AWS certified Software
                 Engineer who has{" "}
                 <strong className="font-bold">2+ years </strong>
-                of professional experience. <br />
-                Combined with web&mobile development and the comprehensive cloud
-                knowledge, I can dig deeper into problems and solve them
-                efficiently.
+                of professional software development experience. <br />
+                Combined with web&mobile development experience and the
+                comprehensive cloud knowledge, I can dig deeper into problems
+                and solve them efficiently.
               </p>
               <br />
             </div>
