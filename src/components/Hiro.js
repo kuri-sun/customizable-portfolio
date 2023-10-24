@@ -49,9 +49,8 @@ export default function Hiro(props) {
                 }`}
               >
                 <strong className="font-bold">x4</strong> AWS certified Software
-                Engineer who has{" "}
-                <strong className="font-bold">2+ years </strong>
-                of professional software development experience. <br />
+                Engineer who has professional experience in mobile, frontend and
+                backend development <br />
                 Combined with web&mobile development experience and the
                 comprehensive cloud knowledge, I can dig deeper into problems
                 and solve them efficiently.
