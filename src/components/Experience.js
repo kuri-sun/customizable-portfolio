@@ -11,7 +11,12 @@ export default function Experience({
   roleDescriptions,
 }) {
   return (
-    <div className="flex flex-row gap-4 text-black">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-offset="100"
+      className="flex flex-row gap-4 text-black "
+    >
       <div className="flex flex-col gap-1 items-center">
         <div className="w-4 h-4 rounded-full bg-indigo-600" />
         <div className="border border-indigo-200 w-0 flex-1" />
