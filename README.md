@@ -18,12 +18,10 @@ app url: https://haruki-kuriwada.netlify.app
 
 ## Leveraged Tech Stack
 
-- Nest.js
 - React
 - HTML
 - CSS3
 - Tailwind
-- VsCode
 - Netlify
 
 ## Features
