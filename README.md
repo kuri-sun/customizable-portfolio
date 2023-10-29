@@ -33,7 +33,7 @@ app url: https://haruki-kuriwada.netlify.app
 
 **📱 Fully Responsive**
 
-**🎨 Styled with Tailwind with easy to maintenance**
+**🎨 Tailwind with easy maintenance**
 
 ## 🛠 Setup instruction
 
