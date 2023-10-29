@@ -46,5 +46,6 @@ Open http://localhost:3000 in your browser and Boom!!
 
 ## Support
 
-Give it a ⭐Star⭐ if you liked this! <br/>
-**Thank you so much for reading until here! Have a great morning/afternoon/night!**
+Leave a ⭐Star⭐ if you liked this! 
+<br/><br/>
+**Thank you! Have a great morning/afternoon/night!**
