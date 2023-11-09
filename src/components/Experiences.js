@@ -52,7 +52,7 @@ export default function Experiences({ isDarkMode }) {
           companyLocation={"Morioka, IW, JA"}
           companyLink={"https://www.wiseman.co.jp/"}
           startDate={"Mar 2019"}
-          endDate={"Apr 2019"}
+          endDate={"Jun 2019"}
           roleDescriptions={[
             "Maintained Janapese No.1 patients' Personal Identification Information(PII) tracking system with Spring by solving 50 Jira tickets and reviewing and offering feedback on peer Pull Requests.",
           ]}
