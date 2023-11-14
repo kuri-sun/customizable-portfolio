@@ -18,6 +18,7 @@ import jira from "../assets/skills/jira.svg";
 import spring from "../assets/skills/spring.svg";
 import azure from "../assets/skills/azure.svg";
 import tailwind from "../assets/skills/tailwind.svg";
+import jest from "../assets/skills/jest.svg";
 import figma from "../assets/skills/figma.svg";
 
 export default function Skills(props) {
@@ -50,6 +51,7 @@ export default function Skills(props) {
           <SkillCard name="Tailwind" experience="3+ years" img={tailwind} />
           <SkillCard name="React" experience="3+ years" img={reactIcon} />
           <SkillCard name="Redux" experience="3+ years" img={redux} />
+          <SkillCard name="Jest" experience="3+ years" img={jest} />
           <SkillCard name="Spring" experience="3+ years" img={spring} />
 
           <SkillCard name="Docker" experience="2+ years" img={docker} />
@@ -61,7 +63,7 @@ export default function Skills(props) {
 
           <SkillCard name="Git" experience="3+ years" img={git} />
           <SkillCard name="Jira" experience="3+ years" img={jira} />
-          <SkillCard name="Figma" experience="3+ years" img={figma} />
+          <SkillCard name="Figma" experience="2+ years" img={figma} />
         </Slider>
       </div>
     </div>
