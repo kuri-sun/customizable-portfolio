@@ -26,17 +26,6 @@ export default function Projects(props) {
             "Uploading a human face image to the serverless backend that consists of API Gateway and Lambda sends the image to the trained data model which can scan the image, analyze it and generate JSON. The React application hosted by S3 shows the analyzed result."
           }
         />
-        {/* NPM react-kantan-img */}
-        <ProjectCard
-          githubLink={"https://github.com/kuri-sun/react-kantan-img"}
-          img={
-            "https://github.com/kuri-sun/react-kantan-img/assets/62743644/b4ebeb25-44ac-4a17-a02d-7413bf86c099"
-          }
-          projectName={"react-kantan-img"}
-          desc={
-            "npm package(React UI library) that helps developers expand the HTML image component's functionalities powered by JavaScript."
-          }
-        />
       </div>
     </div>
   );
