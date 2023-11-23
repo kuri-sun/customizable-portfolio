@@ -11,10 +11,21 @@ export default function Projects(props) {
           isDarkMode ? "text-white" : "text-gray-500"
         }`}
       >
-        Here are some of my Projects
+        Here are some of Projects that I am contributing/maintaining.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center mt-4 gap-5">
+        {/* Carbon Design System  */}
+        <ProjectCard
+          githubLink={"https://github.com/carbon-design-system/carbon"}
+          img={
+            "https://github.com/kuri-sun/customizable-portfolio/assets/62743644/f25c72da-d816-4253-90c1-fde803b75ecd"
+          }
+          projectName={"Carbon Design System (IBM)"}
+          desc={
+            "Maintained and contributed codes to the React UI component library from IBM with 110,000+ weekly downloads with React and TypeScript by discussing solutions with the maintainers and other contributors."
+          }
+        />
         {/* AI Image Analyzer */}
         <ProjectCard
           githubLink={"https://github.com/kuri-sun/ai_image_analyzer"}
