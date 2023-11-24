@@ -24,9 +24,9 @@ export default function Experiences({ isDarkMode }) {
           startDate={"Sep 2021"}
           endDate={"Present"}
           roleDescriptions={[
-            "Produced a 200% user increase through a UI transition across web and mobile applications with React and React Native, following 8px grid system methodology and collaborating with the UI/UX designers with Figma",
-            "Over 40 great feedbacks by trimming the application’s query search response time from 4 seconds to 1.5 seconds by integrating ElasticSearch.",
-            "Enhanced application deployment efficiency from manual operations to full automation by CI/CD pipeline, aligning testings with Testing Library, Jest and JUnit, and deploying to ECS docker-containers.",
+            "Produced a 200% user increase through a UI migration across web and mobile applications with React, React Native, Redux, Mbox, Tailwind CSS, Webpack, Babel, and ES6, following 8px grid system methodology and collaborating with the UI/UX designers through Figma. The memory consumption is 30% less than the previous one by bringing knowledge like Lazy-loading.",
+            "Increased user satisfaction by 90% by trimming the application’s query search response time from 4 seconds to 1 second by integrating ElasticSearch to the backend system with Java, Spring, JWT, and MySQL. Received over 100 great feedbacks.",
+            "Saved an estimated $10k annually by enhancing application deployment efficiency from manual operations to CI/CD automation using AWS CodePipeline, aligning testings with Testing Library, Jest, and JUnit, and deploying to ECS Docker containers.",
           ]}
         />
         {/* Goopter eCommerce Solutions */}
@@ -39,9 +39,9 @@ export default function Experiences({ isDarkMode }) {
           startDate={"Apr 2021"}
           endDate={"Aug 2021"}
           roleDescriptions={[
-            "Achieved a 10% decline in the mobile application RAM consumption by proposing a Multithreading to lighten the burden on the UI thread.",
-            "Reduced 30 code files and enhanced code transparency by transitioning to REST API with Clover for mobile payments, eliminating the need for SDK integration.",
-            "Developed reusable UI components that expedited onboarding for new developers and improved the overall Developer Experience(DX).",
+            "Demonstrated software development proficiency in Git, Agile, and Test Driven development by maintaining the application with React, Express.js, MongoDB, Node.js, Apollo, and GraphQL solving over 50 Jira tickets.",
+            "Reduced 30 files and enhanced code transparency by transitioning to 3rd party REST API for mobile payments using Clover and Moneris, eliminating the need for SDK integration in the MERN application.",
+            "Optimized web interfaces and developed Reusable UI components that expedited onboarding for new developers and improved the overall Developer Experience(DX). Reduced the UI bugs and errors by 40%.",
           ]}
         />
         {/* Wiseman */}
@@ -54,7 +54,8 @@ export default function Experiences({ isDarkMode }) {
           startDate={"Mar 2019"}
           endDate={"Jun 2019"}
           roleDescriptions={[
-            "Maintained Janapese No.1 patients' Personal Identification Information(PII) tracking system with Spring by solving 50 Jira tickets and reviewing and offering feedback on peer Pull Requests.",
+            "Drove over $100 million yearly revenue by maintaining Japan's No.1 patients' Personal Identification Information(PII) tracking system using technologies like TypeScript, React, Python, Flask, PostgreSQL, Redis, S3, Athena, and Redshift.",
+            "Designing and implementing scalable background workers for live streaming that achieved a response time of under 100ms for 95% of requests, using AWS SQS and Lambda for task dispatching and DynamoDB for data storage. Monitored and tracked system performance, achieving 99.9% uptime and handling a peak load of 10,000 requests per minute with minimal errors.",
           ]}
         />
       </div>
