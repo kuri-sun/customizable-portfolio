@@ -14,11 +14,6 @@ export default function Footer(props) {
         className={`flex flex-col md:flex-row items-center gap-8 text-center`}
       >
         <li>
-          <a href="#home" className="hover:underline font-medium">
-            About
-          </a>
-        </li>
-        <li>
           <a href="#skills" className="hover:underline font-medium">
             Skills
           </a>
@@ -31,11 +26,6 @@ export default function Footer(props) {
         <li>
           <a href="#certs" className="hover:underline font-medium">
             Certfications
-          </a>
-        </li>
-        <li>
-          <a href="#exp" className="hover:underline font-medium">
-            Experience
           </a>
         </li>
       </ul>
