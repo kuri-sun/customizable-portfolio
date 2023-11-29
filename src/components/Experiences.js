@@ -21,8 +21,8 @@ export default function Experiences({ isDarkMode }) {
           company={"Fieldshare.io"}
           companyLocation={"Vancouver, BC, CA"}
           companyLink={"https://fieldshare.io"}
-          startDate={"Sep 2021"}
-          endDate={"Present"}
+          startDate={"Sep 2022"}
+          endDate={"Nov 2023"}
           roleDescriptions={[
             "Produced a 200% user increase through a UI migration across web and mobile applications with React, React Native, Redux, Mbox, Tailwind CSS, Webpack, Babel, and ES6, following 8px grid system methodology and collaborating with the UI/UX designers through Figma. The memory consumption is 30% less than the previous one by bringing knowledge like Lazy-loading.",
             "Increased user satisfaction by 90% by trimming the application’s query search response time from 4 seconds to 1 second by integrating ElasticSearch to the backend system with Java, Spring, JWT, and MySQL. Received over 100 great feedbacks.",
@@ -37,7 +37,7 @@ export default function Experiences({ isDarkMode }) {
           companyLocation={"Burnaby, BC, CA"}
           companyLink={"https://www.goopter.com/"}
           startDate={"Apr 2021"}
-          endDate={"Aug 2021"}
+          endDate={"Aug 2022"}
           roleDescriptions={[
             "Demonstrated software development proficiency in Git, Agile, and Test Driven development by maintaining the application with React, Express.js, MongoDB, Node.js, Apollo, and GraphQL solving over 50 Jira tickets.",
             "Reduced 30 files and enhanced code transparency by transitioning to 3rd party REST API for mobile payments using Clover and Moneris, eliminating the need for SDK integration in the MERN application.",
