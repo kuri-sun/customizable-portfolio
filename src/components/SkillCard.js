@@ -11,9 +11,6 @@ export default function SkillCard(props) {
         <div className="font-bold md:text-xl text-dark-500">
           <span>{props.name}</span>
         </div>
-        <p className="font-light md:text-lg text-dark-500">
-          {props.experience}
-        </p>
       </div>
     </div>
   );
