@@ -1,4 +1,4 @@
-import resume from "../assets/resume.pdf";
+// import resume from "../assets/resume.pdf";
 import Switch from "react-switch";
 
 export const light = (
@@ -67,14 +67,14 @@ export default function Navbar(props) {
         </ul>
         {/* resume & dark/light theme */}
         <div className="flex flex-row gap-8">
-          <a
+          {/* <a
             href={resume}
             rel="noreferrer"
             target="_blank"
             className="bg-teal-500 font-medium rounded-full px-4 py-1 hover:bg-teal-400 hover:scale-110 transition duration-100 text-white"
           >
             Resume
-          </a>
+          </a> */}
           <Switch
             onChange={() => {
               setIsDarkMode(!isDarkMode);
