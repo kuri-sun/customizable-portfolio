@@ -9,13 +9,13 @@ export default function Certs(props) {
 
   return (
     <div id="certs" className="mt-4 text-white">
-      <h1 className="text-3xl font-bold text-indigo-500">Certifications</h1>
+      <h1 className="text-3xl font-bold text-indigo-500">Achievements</h1>
       <p
         className={`text-xl font-light ${
           isDarkMode ? "text-white" : "text-gray-500"
         }`}
       >
-        Here are some of my Certifications
+        Here are some of my Achievements
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 justify-center mt-4 gap-5">
