@@ -11,7 +11,7 @@ export default function Projects(props) {
           isDarkMode ? "text-white" : "text-gray-500"
         }`}
       >
-        Here are some of Projects that I am contributing/maintaining.
+        Here is projects that I am contributing/maintaining.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center mt-4 gap-5">

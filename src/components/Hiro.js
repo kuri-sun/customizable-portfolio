@@ -60,7 +60,7 @@ export default function Hiro(props) {
           {/* Avator section */}
           <img
             src={avatar}
-            className="h-48 "
+            className="h-48 rounded-full"
             alt="my portfolio avatar"
             data-aos="fade-left"
             data-aos-duration="1000"

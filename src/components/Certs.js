@@ -15,7 +15,7 @@ export default function Certs(props) {
           isDarkMode ? "text-white" : "text-gray-500"
         }`}
       >
-        Here are some of my Achievements
+        Here are my achievements.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 justify-center mt-4 gap-5">
