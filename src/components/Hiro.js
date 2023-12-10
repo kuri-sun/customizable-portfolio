@@ -4,7 +4,7 @@ import {
   faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-import avatar from "../assets/hero/avatar.png";
+import avatar from "../assets/hero/avator.jpeg";
 
 export default function Hiro(props) {
   const isDarkMode = props.isDarkMode;
@@ -60,7 +60,7 @@ export default function Hiro(props) {
           {/* Avator section */}
           <img
             src={avatar}
-            className="h-48"
+            className="h-48 rounded-full"
             alt="my portfolio avatar"
             data-aos="fade-left"
             data-aos-duration="1000"
