@@ -31,7 +31,7 @@ export default function Hiro(props) {
               >
                 <h1 className="text-4xl">
                   Hi, I'm{" "}
-                  <span className="font-bold">Ruki(Haruki) Kuriwada</span>
+                  <span className="font-bold">Haruki(Ruki) Kuriwada</span>
                 </h1>
               </div>
               <div
