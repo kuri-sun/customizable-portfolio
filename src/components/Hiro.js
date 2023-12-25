@@ -3,6 +3,7 @@ import {
   faGithub,
   faInstagram,
   faLinkedinIn,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import avatar from "../assets/hero/avator.jpeg";
 import { useTheme } from "../hooks/useTheme";
@@ -91,13 +92,7 @@ export default function Hiro() {
               );
             }}
           />
-          <FontAwesomeIcon
-            size="2xl hover:scale-110 cursor-pointer transition duration-100"
-            icon={faInstagram}
-            onClick={() => {
-              window.open("https://instagram.com/ha.ruki.k/", "_blank");
-            }}
-          />
+
         </ul>
         <div className="h-20" />
       </div>

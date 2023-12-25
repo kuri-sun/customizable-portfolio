@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { useTheme } from "../hooks/useTheme";
 
 export default function Footer() {
@@ -52,6 +56,14 @@ export default function Footer() {
               "https://www.linkedin.com/in/harukikuriwada/",
               "_blank"
             );
+          }}
+        />
+        <FontAwesomeIcon
+          size="2xl hover:scale-110 cursor-pointer transition duration-100"
+          icon={faTwitter}
+          color={theme === "dark" ? "white" : `#1DA1F2`}
+          onClick={() => {
+            window.open("https://twitter.com/HK88395", "_blank");
           }}
         />
       </div>
