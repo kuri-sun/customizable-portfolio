@@ -23,9 +23,6 @@ import figma from "../assets/skills/figma.svg";
 import css from "../assets/skills/css.svg";
 import junit from "../assets/skills/junit.svg";
 import gql from "../assets/skills/graphql.svg";
-import mongo from "../assets/skills/mongodb.svg";
-import mysql from "../assets/skills/mysql.svg";
-import psql from "../assets/skills/psql.svg";
 
 export default function Skills(props) {
   const isDarkMode = props.isDarkMode;
@@ -65,10 +62,6 @@ export default function Skills(props) {
 
           <SkillCard name="Jest" img={jest} />
           <SkillCard name="Junit" img={junit} />
-
-          <SkillCard name="MySQL" img={mysql} />
-          <SkillCard name="PostgreSQL" img={psql} />
-          <SkillCard name="MongoDB" img={mongo} />
 
           <SkillCard name="Docker" img={docker} />
 

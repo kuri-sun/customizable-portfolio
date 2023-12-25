@@ -12,11 +12,7 @@ export default function ProjectCard(props) {
       data-aos="fade-up"
       data-aos-duration="500"
       data-aos-offset="100"
-      className="hover:bg-indigo-200 hover:cursor-pointer w-full h-full bg-indigo-100 rounded-md py-4 px-4"
-      onClick={(e) => {
-        e.preventDefault();
-        window.open(githubLink, "_blank");
-      }}
+      className="w-full h-full bg-indigo-100 rounded-md py-4 px-4"
     >
       <img
         src={img}
