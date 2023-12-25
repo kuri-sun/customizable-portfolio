@@ -40,7 +40,7 @@ export default function Hiro(props) {
                 } md:bg-indigo-500 mt-2 md:px-2 py-1 w-fit`}
               >
                 <p className="text-4xl text-indigo-500 md:text-white font-bold">
-                  Software Engineer / Cloud Engineer
+                  Front End Developer / Full Stack Developer
                 </p>
               </div>
               <br />
