@@ -5,9 +5,10 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import avatar from "../assets/hero/avator.jpeg";
+import { useTheme } from "../hooks/useTheme";
 
-export default function Hiro(props) {
-  const isDarkMode = props.isDarkMode;
+export default function Hiro() {
+  const { theme } = useTheme();
 
   return (
     <>
@@ -26,27 +27,26 @@ export default function Hiro(props) {
             <div className="flex flex-col w-full mt-8">
               <div
                 className={`flex flex-row items-center gap-2 ${
-                  isDarkMode ? "text-white" : "text-black"
+                  theme === "dark" ? "text-white" : "text-black"
                 }`}
               >
                 <h1 className="text-4xl">
-                  Hi, I'm{" "}
-                  <span className="font-bold">Haruki(Ruki) Kuriwada</span>
+                  Hi, I'm <span className="font-bold">Haruki Kuriwada</span>
                 </h1>
               </div>
               <div
                 className={` ${
-                  isDarkMode ? "bg-dark-200" : "bg-white"
+                  theme === "dark" ? "bg-dark-200" : "bg-white"
                 } md:bg-indigo-500 mt-2 md:px-2 py-1 w-fit`}
               >
                 <p className="text-4xl text-indigo-500 md:text-white font-bold">
-                  Front End Developer / Full Stack Developer
+                  Front End / Full Stack Developer
                 </p>
               </div>
               <br />
               <p
                 className={`text-xl font-light text-gray-600 ${
-                  isDarkMode ? "text-white" : "text-black"
+                  theme === "dark" ? "text-white" : "text-black"
                 }`}
               >
                 Having professional experience in frontend, backend and mobile
@@ -71,7 +71,7 @@ export default function Hiro(props) {
         {/* Social media */}
         <ul
           className={`flex mt-2 gap-4 items-center ${
-            isDarkMode ? "text-white" : "text-black"
+            theme === "dark" ? "text-white" : "text-black"
           }`}
         >
           <FontAwesomeIcon

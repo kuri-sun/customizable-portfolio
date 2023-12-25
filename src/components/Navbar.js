@@ -1,7 +1,7 @@
 import resume from "../assets/resume.pdf";
 import Switch from "react-switch";
 
-export const light = (
+const lightModeSvg = (
   <div className="flex flex-row items-center justify-center p-0.5">
     <svg
       fill="#FFF"
@@ -17,7 +17,7 @@ export const light = (
   </div>
 );
 
-export const dark = (
+const darkModeSvg = (
   <div className="flex flex-row items-center justify-center p-1">
     <svg
       fill="#FFF"
@@ -33,19 +33,16 @@ export const dark = (
   </div>
 );
 
-export default function Navbar(props) {
-  const isDarkMode = props.isDarkMode;
-  const setIsDarkMode = props.setIsDarkMode;
-
+export default function Navbar({ theme, setTheme }) {
   return (
     <div
       className={`navbar-container sticky z-50 w-full top-0 left-0 px-8 py-4 lg:px-20 xl:px-32 ${
-        isDarkMode ? "bg-dark-700" : "bg-gray-200"
+        theme === "dark" ? "bg-dark-700" : "bg-gray-200"
       }`}
     >
       <div
         className={`flex justify-between items-center ${
-          isDarkMode ? "text-white" : "text-gray-700"
+          theme === "dark" ? "text-white" : "text-gray-700"
         }`}
       >
         <ul className="hidden md:flex">
@@ -77,11 +74,11 @@ export default function Navbar(props) {
           </a>
           <Switch
             onChange={() => {
-              setIsDarkMode(!isDarkMode);
+              setTheme(theme === "dark" ? "light" : "dark");
             }}
-            checked={isDarkMode}
-            uncheckedIcon={light}
-            checkedIcon={dark}
+            checked={theme === "light"}
+            uncheckedIcon={darkModeSvg}
+            checkedIcon={lightModeSvg}
           />
         </div>
       </div>

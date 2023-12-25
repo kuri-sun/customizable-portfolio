@@ -23,9 +23,10 @@ import figma from "../assets/skills/figma.svg";
 import css from "../assets/skills/css.svg";
 import junit from "../assets/skills/junit.svg";
 import gql from "../assets/skills/graphql.svg";
+import { useTheme } from "../hooks/useTheme.js";
 
-export default function Skills(props) {
-  const isDarkMode = props.isDarkMode;
+export default function Skills() {
+  const { theme } = useTheme();
   const settings = {
     dots: false,
     autoplay: true,
@@ -39,7 +40,7 @@ export default function Skills(props) {
       <h1 className="text-3xl font-bold">Skills</h1>
       <p
         className={`text-xl font-light ${
-          isDarkMode ? "text-white" : "text-gray-500"
+          theme === "dark" ? "text-white" : "text-gray-500"
         }`}
       >
         Here is my technical skills.

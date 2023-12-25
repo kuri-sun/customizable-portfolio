@@ -1,13 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { useTheme } from "../hooks/useTheme";
 
-export default function Footer(props) {
-  const isDarkMode = props.isDarkMode;
+export default function Footer() {
+  const { theme } = useTheme();
 
   return (
     <div
       className={`w-full flex flex-col items-center gap-8 text-white py-8 mt-32 ${
-        isDarkMode ? "bg-dark-700 text-white" : "bg-gray-200 text-gray-700"
+        theme === "dark"
+          ? "bg-dark-700 text-white"
+          : "bg-gray-200 text-gray-700"
       }`}
     >
       <ul
@@ -33,7 +36,7 @@ export default function Footer(props) {
         <FontAwesomeIcon
           className={`hidden md:flex`}
           size="2xl hover:scale-110 cursor-pointer transition duration-100"
-          color={`${isDarkMode ? "white" : "black"}`}
+          color={`${theme === "dark" ? "white" : "black"}`}
           icon={faGithub}
           onClick={() => {
             window.open("https://github.com/kuri-sun", "_blank");
@@ -43,7 +46,7 @@ export default function Footer(props) {
           className={`hidden md:flex`}
           size="2xl hover:scale-110 cursor-pointer transition duration-100"
           icon={faLinkedinIn}
-          color={isDarkMode ? "white" : `#0a66c2`}
+          color={theme === "dark" ? "white" : `#0a66c2`}
           onClick={() => {
             window.open(
               "https://www.linkedin.com/in/harukikuriwada/",
@@ -54,7 +57,7 @@ export default function Footer(props) {
       </div>
       <p
         className={`text-sm font-light text-center ${
-          isDarkMode ? "text-white" : "text-gray-700"
+          theme === "dark" ? "text-white" : "text-gray-700"
         }`}
       >
         Copyright © 2023 Haruki Kuriwada

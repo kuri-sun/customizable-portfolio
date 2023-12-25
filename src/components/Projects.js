@@ -1,14 +1,15 @@
+import { useTheme } from "../hooks/useTheme";
 import ProjectCard from "./ProjectCard";
 
-export default function Projects(props) {
-  const isDarkMode = props.isDarkMode;
+export default function Projects() {
+  const { theme } = useTheme();
 
   return (
     <div id="projects" className="mt-4 text-white text-indigo-500">
       <h1 className="text-3xl font-bold">Projects</h1>
       <p
         className={`text-xl font-light ${
-          isDarkMode ? "text-white" : "text-gray-500"
+          theme === "dark" ? "text-white" : "text-gray-500"
         }`}
       >
         Here is projects that I am contributing/maintaining.

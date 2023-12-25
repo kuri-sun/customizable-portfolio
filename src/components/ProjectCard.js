@@ -1,12 +1,7 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function ProjectCard(props) {
-  const githubLink = props.githubLink;
-  const img = props.img;
-  const projectName = props.projectName;
-  const desc = props.desc;
-
+export default function ProjectCard({ githubLink, img, projectName, desc }) {
   return (
     <div
       data-aos="fade-up"
