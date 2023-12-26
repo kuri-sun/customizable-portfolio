@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 import { useTheme } from "./hooks/useTheme";
 
 function App() {
-  const { theme, setTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     // Change web browser title.
@@ -25,7 +25,7 @@ function App() {
         theme === "dark" ? "bg-dark-200" : "bg-white"
       }`}
     >
-      <Navbar theme={theme} setTheme={setTheme} />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <div className={`flex flex-col gap-24 px-6 md:px-12 lg:px-20 xl:px-36`}>
         <Hiro />
         <Skills />

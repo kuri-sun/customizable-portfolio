@@ -33,7 +33,7 @@ const darkModeSvg = (
   </div>
 );
 
-export default function Navbar({ theme, setTheme }) {
+export default function Navbar({ theme, toggleTheme }) {
   return (
     <div
       className={`navbar-container sticky z-50 w-full top-0 left-0 px-8 py-4 lg:px-20 xl:px-32 ${
@@ -73,9 +73,7 @@ export default function Navbar({ theme, setTheme }) {
             Resume
           </a>
           <Switch
-            onChange={() => {
-              setTheme(theme === "dark" ? "light" : "dark");
-            }}
+            onChange={toggleTheme}
             checked={theme === "light"}
             uncheckedIcon={darkModeSvg}
             checkedIcon={lightModeSvg}

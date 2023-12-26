@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ThemeContext } from "../hooks/useTheme";
-import { useLocalStorgae } from "../hooks/useLocalStorage";
 import { LS_THEME_KEY } from "../utils/constants";
 
 export default function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState("light");
-  const { getItem } = useLocalStorgae();
+  const [theme, setTheme] = useState(
+    localStorage.getItem(LS_THEME_KEY) === "dark" ? "dark" : "light"
+  );
 
-  useEffect(() => {
-    // Detect the night OR light time. (6AM - 6PM is light time(my definition))
-    const savedTheme = getItem(LS_THEME_KEY);
-    setTheme(savedTheme);
-  }, []);
+  function toggleTheme() {
+    setTheme(theme === "dark" ? "light" : "dark");
+    localStorage.setItem(LS_THEME_KEY, theme === "dark" ? "light" : "dark");
+  }
+
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
