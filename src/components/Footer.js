@@ -10,70 +10,101 @@ export default function Footer() {
   const { theme } = useTheme();
 
   return (
-    <div
+    <footer
       className={`w-full flex flex-col items-center gap-8 text-white py-8 mt-32 ${
         theme === "dark"
           ? "bg-dark-700 text-white"
           : "bg-gray-200 text-gray-700"
       }`}
     >
-      <ul
+      <menu
+        aria-label="This site navigation menu in the footer."
         className={`flex flex-col md:flex-row items-center gap-8 text-center`}
       >
         <li>
-          <a href="#skills" className="hover:underline font-medium">
+          <a
+            aria-roledescription="my technical skill section"
+            href="#skills"
+            className="hover:underline font-medium"
+          >
             Skills
           </a>
         </li>
         <li>
-          <a href="#projects" className="hover:underline font-medium">
+          <a
+            aria-roledescription="my project list section"
+            href="#projects"
+            className="hover:underline font-medium"
+          >
             Projects
           </a>
         </li>
         <li>
-          <a href="#certs" className="hover:underline font-medium">
+          <a
+            aria-roledescription="my project list section"
+            href="#certs"
+            className="hover:underline font-medium"
+          >
             Certfications
           </a>
         </li>
-      </ul>
-      <div className="flex flex-row gap-8">
-        <FontAwesomeIcon
-          className={`hidden md:flex`}
-          size="2xl hover:scale-110 cursor-pointer transition duration-100"
-          color={`${theme === "dark" ? "white" : "black"}`}
-          icon={faGithub}
+      </menu>
+      <div
+        role="list"
+        aria-label="my soical media account links"
+        className="flex flex-row gap-8"
+      >
+        <button
+          aria-roledescription="this is my GitHub account URL."
           onClick={() => {
             window.open("https://github.com/kuri-sun", "_blank");
           }}
-        />
-        <FontAwesomeIcon
-          className={`hidden md:flex`}
-          size="2xl hover:scale-110 cursor-pointer transition duration-100"
-          icon={faLinkedinIn}
-          color={theme === "dark" ? "white" : `#0a66c2`}
+        >
+          <FontAwesomeIcon
+            className={`hidden md:flex`}
+            size="2xl hover:scale-110 cursor-pointer transition duration-100"
+            color={`${theme === "dark" ? "white" : "black"}`}
+            icon={faGithub}
+          />
+        </button>
+        <button
+          aria-roledescription="this is my LinkedIn account URL."
           onClick={() => {
             window.open(
               "https://www.linkedin.com/in/harukikuriwada/",
               "_blank"
             );
           }}
-        />
-        <FontAwesomeIcon
-          size="2xl hover:scale-110 cursor-pointer transition duration-100"
-          icon={faTwitter}
-          color={theme === "dark" ? "white" : `#1DA1F2`}
+        >
+          <FontAwesomeIcon
+            className={`hidden md:flex`}
+            size="2xl hover:scale-110 cursor-pointer transition duration-100"
+            icon={faLinkedinIn}
+            color={theme === "dark" ? "white" : `#0a66c2`}
+          />
+        </button>
+        <button
+          aria-roledescription="this is my Twitter account URL."
           onClick={() => {
             window.open("https://twitter.com/HK88395", "_blank");
           }}
-        />
+        >
+          <FontAwesomeIcon
+            size="2xl hover:scale-110 cursor-pointer transition duration-100"
+            icon={faTwitter}
+            color={theme === "dark" ? "white" : `#1DA1F2`}
+          />
+        </button>
       </div>
       <p
+        role="note"
+        aria-roledescription="copyright for this web site."
         className={`text-sm font-light text-center ${
           theme === "dark" ? "text-white" : "text-gray-700"
         }`}
       >
         Copyright © 2023 Haruki Kuriwada
       </p>
-    </div>
+    </footer>
   );
 }

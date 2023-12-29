@@ -1,12 +1,18 @@
 export default function SkillCard({ img, name }) {
   return (
     <div
+      role="listitem"
+      aria-roledescription={"I have a technical skill of " + name}
       data-aos="fade-up"
       data-aos-duration="500"
       data-aos-offset="100"
       className="w-11/12 overflow-hidden p-4 text-center justify-center bg-indigo-100 rounded-md flex flex-col h-48"
     >
-      <img src={img} className="w-20 max-h-20 mx-auto" alt={name} />
+      <img
+        src={img}
+        className="w-20 max-h-20 mx-auto"
+        alt={"The logo for " + name}
+      />
       <div className="mt-2">
         <div className="font-bold md:text-xl text-dark-500">
           <span>{name}</span>

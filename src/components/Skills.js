@@ -37,7 +37,7 @@ export default function Skills() {
 
   return (
     <div id="skills" className="mt-4 text-indigo-500">
-      <h1 className="text-3xl font-bold">Skills</h1>
+      <h2 className="text-3xl font-bold">Skills</h2>
       <p
         className={`text-xl font-light ${
           theme === "dark" ? "text-white" : "text-gray-500"

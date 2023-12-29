@@ -1,10 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedinIn,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import avatar from "../assets/hero/avator.jpeg";
 import { useTheme } from "../hooks/useTheme";
 
@@ -40,7 +35,10 @@ export default function Hiro() {
                   theme === "dark" ? "bg-dark-200" : "bg-white"
                 } md:bg-indigo-500 mt-2 md:px-2 py-1 w-fit`}
               >
-                <p className="text-4xl text-indigo-500 md:text-white font-bold">
+                <p
+                  aria-label="my job title"
+                  className="text-4xl text-indigo-500 md:text-white font-bold"
+                >
                   Front End / Full Stack Developer
                 </p>
               </div>
@@ -70,30 +68,41 @@ export default function Hiro() {
           />
         </div>
         {/* Social media */}
-        <ul
+        <div
+          role="list"
+          aria-label="my soical media account links"
           className={`flex mt-2 gap-4 items-center ${
             theme === "dark" ? "text-white" : "text-black"
           }`}
         >
-          <FontAwesomeIcon
-            size="2xl hover:scale-110 cursor-pointer transition duration-100"
-            icon={faGithub}
+          <button
+            aria-roledescription="this is my GitHub account URL."
             onClick={() => {
               window.open("https://github.com/kuri-sun", "_blank");
             }}
-          />
-          <FontAwesomeIcon
-            size="2xl hover:scale-110 cursor-pointer transition duration-100"
-            icon={faLinkedinIn}
+          >
+            <FontAwesomeIcon
+              size="2xl hover:scale-110 cursor-pointer transition duration-100"
+              icon={faGithub}
+              aria-label="A GitHub icon nested within the button"
+            />
+          </button>
+          <button
+            aria-roledescription="this is my LinkedIn account URL."
             onClick={() => {
               window.open(
                 "https://www.linkedin.com/in/harukikuriwada/",
                 "_blank"
               );
             }}
-          />
-
-        </ul>
+          >
+            <FontAwesomeIcon
+              size="2xl hover:scale-110 cursor-pointer transition duration-100"
+              icon={faLinkedinIn}
+              aria-label="A LinkedIn icon nested within the button"
+            />
+          </button>
+        </div>
         <div className="h-20" />
       </div>
     </>
