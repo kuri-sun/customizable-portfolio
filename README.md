@@ -1,4 +1,5 @@
 # Full Responsive and Customizable Portfolio
+
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
   <img src="https://github.com/kuri-sun/portfolio/assets/62743644/3826258f-68cf-4c32-b94a-fdbe64462d75" alt="elasticsearch" width="40" height="40"/>
@@ -26,6 +27,8 @@ app url: https://haruki-kuriwada.netlify.app
 
 ## Features
 
+**☀️♿ Accessibility**
+
 **☀️🌙 Dark&Light mode**
 
 **📱 Fully Responsive**
@@ -43,6 +46,6 @@ Open http://localhost:3000 in your browser and Boom!!
 
 ## Support
 
-Leave a ⭐Star⭐ if you liked this! 
+Leave a ⭐Star⭐ if you liked this!
 <br/><br/>
 **Thank you! Have a great morning/afternoon/night!**
