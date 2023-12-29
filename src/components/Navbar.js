@@ -2,7 +2,11 @@ import resume from "../assets/resume.pdf";
 import Switch from "react-switch";
 
 const lightModeSvg = (
-  <div className="flex flex-row items-center justify-center p-0.5">
+  <div
+    role="img"
+    aria-roledescription="Light mode SVG image"
+    className="flex flex-row items-center justify-center p-0.5"
+  >
     <svg
       fill="#FFF"
       width="24px"
@@ -18,7 +22,11 @@ const lightModeSvg = (
 );
 
 const darkModeSvg = (
-  <div className="flex flex-row items-center justify-center p-1">
+  <div
+    role="img"
+    aria-roledescription="Dark mode SVG image"
+    className="flex flex-row items-center justify-center p-1"
+  >
     <svg
       fill="#FFF"
       width="20px"
@@ -35,7 +43,7 @@ const darkModeSvg = (
 
 export default function Navbar({ theme, toggleTheme }) {
   return (
-    <div
+    <nav
       className={`navbar-container sticky z-50 w-full top-0 left-0 px-8 py-4 lg:px-20 xl:px-32 ${
         theme === "dark" ? "bg-dark-700" : "bg-gray-200"
       }`}
@@ -45,26 +53,43 @@ export default function Navbar({ theme, toggleTheme }) {
           theme === "dark" ? "text-white" : "text-gray-700"
         }`}
       >
-        <ul className="hidden md:flex">
+        <menu
+          aria-label="This site navigation menu in the navigation bar."
+          className="hidden md:flex"
+        >
           <li className="p-4">
-            <a href="#skills" className="hover:underline font-medium">
+            <a
+              aria-label="my technical skill section"
+              href="#skills"
+              className="hover:underline font-medium"
+            >
               Skills
             </a>
           </li>
           <li className="p-4">
-            <a href="#projects" className="hover:underline font-medium">
+            <a
+              aria-label="my project list section"
+              href="#projects"
+              className="hover:underline font-medium"
+            >
               Projects
             </a>
           </li>
           <li className="p-4">
-            <a href="#certs" className="hover:underline font-medium">
+            <a
+              aria-label="my technical certification section"
+              href="#certs"
+              className="hover:underline font-medium"
+            >
               Certfications
             </a>
           </li>
-        </ul>
+        </menu>
         {/* resume & dark/light theme */}
         <div className="flex flex-row gap-8">
           <a
+            role="button"
+            aria-label="This is the download button for my job resume."
             href={resume}
             rel="noreferrer"
             target="_blank"
@@ -73,6 +98,8 @@ export default function Navbar({ theme, toggleTheme }) {
             Resume
           </a>
           <Switch
+            role="switch"
+            aria-label="the switch for light or dark mode. ON for light, OFF for dark."
             onChange={toggleTheme}
             checked={theme === "light"}
             uncheckedIcon={darkModeSvg}
@@ -80,6 +107,6 @@ export default function Navbar({ theme, toggleTheme }) {
           />
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

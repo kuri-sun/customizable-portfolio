@@ -6,7 +6,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="mt-4 text-white text-indigo-500">
-      <h1 className="text-3xl font-bold">Projects</h1>
+      <h2 className="text-3xl font-bold">Projects</h2>
       <p
         className={`text-xl font-light ${
           theme === "dark" ? "text-white" : "text-gray-500"
@@ -24,7 +24,7 @@ export default function Projects() {
           }
           projectName={"Carbon Design System (IBM)"}
           desc={
-            "Maintained and contributed codes to the React UI component library from IBM with 110,000+ weekly downloads with React and TypeScript by discussing solutions with the maintainers and other contributors."
+            "Contributed codes and ideas to the high-accessibility UI component library from IBM with over 110,000 weekly downloads written in JavaScript and TypeScript by discussing solutions with the maintainers and other contributors."
           }
         />
         {/* AI Image Analyzer */}
@@ -35,7 +35,7 @@ export default function Projects() {
           }
           projectName={"AI Image Analyzer"}
           desc={
-            "Uploading a human face image to the serverless backend that consists of API Gateway and Lambda sends the image to the trained data model which can scan the image, analyze it and generate JSON. The React application hosted by S3 shows the analyzed result."
+            "Uploading a human face image to the serverless backend that sends the image to the trained data model which can scan the image, analyze it. The React application hosted by S3 shows the analyzed result."
           }
         />
       </div>

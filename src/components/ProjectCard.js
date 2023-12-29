@@ -12,20 +12,24 @@ export default function ProjectCard({ githubLink, img, projectName, desc }) {
       <img
         src={img}
         className="w-full h-56 mx-auto object-cover"
-        alt={projectName}
-      ></img>
+        alt={"This is the shreenshot for the " + projectName + " project."}
+      />
       <div className="mt-2">
         <div className="flex flex-row gap-2 items-center">
           <h1 className="font-bold md:text-xl text-gray-600">{projectName}</h1>
           {githubLink && (
-            <FontAwesomeIcon
-              size="xl hover:scale-110 text-black transition duration-100 cursor-pointer"
-              icon={faGithub}
+            <button
+              aria-roledescription="The GitHub URL for this project."
               onClick={(e) => {
                 e.preventDefault();
                 window.open(githubLink, "_blank");
               }}
-            />
+            >
+              <FontAwesomeIcon
+                size="xl hover:scale-110 text-black transition duration-100 cursor-pointer"
+                icon={faGithub}
+              />
+            </button>
           )}
         </div>
         <p className="font-light text-gray-500">{desc}</p>
