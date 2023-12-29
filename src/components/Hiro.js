@@ -44,6 +44,7 @@ export default function Hiro() {
               </div>
               <br />
               <p
+                aria-label="My brief introduce as a software engineer."
                 className={`text-xl font-light text-gray-600 ${
                   theme === "dark" ? "text-white" : "text-black"
                 }`}

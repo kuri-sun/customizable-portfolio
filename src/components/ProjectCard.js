@@ -12,7 +12,7 @@ export default function ProjectCard({ githubLink, img, projectName, desc }) {
       <img
         src={img}
         className="w-full h-56 mx-auto object-cover"
-        alt={"This is the shreenshot for the " + projectName + " project."}
+        alt={"This is the screenshot for the " + projectName + " project."}
       />
       <div className="mt-2">
         <div className="flex flex-row gap-2 items-center">
