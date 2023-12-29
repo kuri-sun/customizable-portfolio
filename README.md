@@ -27,7 +27,7 @@ app url: https://haruki-kuriwada.netlify.app
 
 ## Features
 
-**☀️♿ Accessibility**
+**️♿ Accessibility**
 
 **☀️🌙 Dark&Light mode**
 
