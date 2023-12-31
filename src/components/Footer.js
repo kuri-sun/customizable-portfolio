@@ -61,10 +61,9 @@ export default function Footer() {
           }}
         >
           <FontAwesomeIcon
-            className={`hidden md:flex`}
             size="2xl hover:scale-110 cursor-pointer transition duration-100"
-            color={`${theme === "dark" ? "white" : "black"}`}
             icon={faGithub}
+            color={`${theme === "dark" ? "white" : "black"}`}
           />
         </button>
         <button
@@ -77,7 +76,6 @@ export default function Footer() {
           }}
         >
           <FontAwesomeIcon
-            className={`hidden md:flex`}
             size="2xl hover:scale-110 cursor-pointer transition duration-100"
             icon={faLinkedinIn}
             color={theme === "dark" ? "white" : `#0a66c2`}
