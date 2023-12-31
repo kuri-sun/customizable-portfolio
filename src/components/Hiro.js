@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import avatar from "../assets/hero/avator.jpeg";
 import { useTheme } from "../hooks/useTheme";
 
@@ -86,6 +90,7 @@ export default function Hiro() {
               size="2xl hover:scale-110 cursor-pointer transition duration-100"
               icon={faGithub}
               aria-label="A GitHub icon nested within the button"
+              color={`${theme === "dark" ? "white" : "black"}`}
             />
           </button>
           <button
@@ -101,6 +106,19 @@ export default function Hiro() {
               size="2xl hover:scale-110 cursor-pointer transition duration-100"
               icon={faLinkedinIn}
               aria-label="A LinkedIn icon nested within the button"
+              color={theme === "dark" ? "white" : `#0a66c2`}
+            />
+          </button>
+          <button
+            aria-roledescription="this is my Twitter account URL."
+            onClick={() => {
+              window.open("https://twitter.com/HK88395", "_blank");
+            }}
+          >
+            <FontAwesomeIcon
+              size="2xl hover:scale-110 cursor-pointer transition duration-100"
+              icon={faTwitter}
+              color={theme === "dark" ? "white" : `#1DA1F2`}
             />
           </button>
         </div>
